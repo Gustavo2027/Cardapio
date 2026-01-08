@@ -135,6 +135,12 @@
   width: auto;
 }
 
+html, body {
+  overscroll-behavior: none;
+  touch-action: pan-x pan-y;
+}
+
+
 
 
 
@@ -156,7 +162,8 @@
 }
 </script>
 </head>
-<body class="bg-[#1a1110] text-gray-100 overflow-x-hidden">
+<body class="bg-[#1a1110] text-gray-100 overflow-hidden overscroll-none">
+
 
     <header class="top-bar">
     <div class="logo-area">
