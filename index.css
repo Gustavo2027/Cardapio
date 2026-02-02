@@ -1,4 +1,4 @@
-
+ <style>
     :root {
       --gold: #d4af37;
       --dark-brown: #1a0d0b;
@@ -155,4 +155,36 @@
     "react": "https://esm.sh/react@^19.2.4"
   }
 }
+</script>
+</head>
+<body>
 
+  <header class="top-bar">
+    <div class="logo-container">
+      <img src="https://i.ibb.co/R4jn242d/afpesp-2.png" alt="AFPESP" />
+    </div>
+    <span>AFPESP Peruíbe II</span>
+  </header>
+
+  <section class="title-bar">
+    <h1>Cardápio Bar - AFPESP Peruíbe II</h1>
+  </section>
+
+  <div id="root">
+    <!-- Adicionado onclick para virar as páginas clicando no livro -->
+    <div id="book-container" onclick="handleBookClick(event)">
+      <div id="book" class="book-wrapper"></div>
+    </div>
+
+    <div class="controls">
+      <button class="btn-nav" onclick="prevPage()" aria-label="Voltar Página">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <span id="page-indicator" class="page-indicator">1 / 1</span>
+      <button class="btn-nav" onclick="nextPage()" aria-label="Próxima Página">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+    </div>
+  </div>
+
+  <script>
