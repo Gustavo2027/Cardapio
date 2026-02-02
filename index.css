@@ -1,7 +1,8 @@
- 
+
     :root {
       --gold: #c5a059;
       --dark-brown: #3d241f;
+      --paper: #fdfbf7;
     }
 
     html, body {
@@ -51,12 +52,13 @@
       position: relative;
       width: 98%;
       max-width: 1000px;
-      height: 75vh; /* Altura fixa relativa para evitar cortes */
+      height: 75vh;
       margin: auto;
       perspective: 2000px;
       -webkit-perspective: 2000px;
-      opacity: 0;
-      transition: opacity 0.5s ease;
+      opacity: 0; /* Começa invisível para evitar o flash de letras */
+      transition: opacity 0.4s ease-in-out;
+      background-color: transparent;
     }
 
     .transform-style-3d { 
@@ -74,10 +76,10 @@
       width: 50%;
       height: 100%;
       transform-origin: left;
-      transition: transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
-      -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transition: transform 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+      -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
       z-index: 10;
-      pointer-events: none; /* Só habilita nas faces visíveis */
+      will-change: transform;
     }
 
     .sheet.flipped {
@@ -85,14 +87,19 @@
       -webkit-transform: rotateY(-180deg);
     }
 
-    .backface-hidden { 
-      backface-visibility: hidden; 
+    .face {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
-      transform: translateZ(0); /* Força aceleração de hardware */
+      background-color: var(--paper); /* Fundo sólido para evitar transparência */
+      transform: translateZ(0);
       -webkit-transform: translateZ(0);
     }
 
-    .bg-texture-paper { background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png'); background-color: #fdfbf7; }
+    .bg-texture-paper { background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png'); }
     .bg-texture-leather { background-image: url('https://www.transparenttextures.com/patterns/leather.png'); }
 
     .menu-item {
@@ -131,17 +138,14 @@
     .font-serif { font-family: 'Cinzel', serif; }
 
     @media (max-width: 640px) {
-      #book-container { 
-        height: 70vh;
-      }
+      #book-container { height: 70vh; }
       .p-page { padding: 12px !important; }
       .p-header { padding: 15px 5px !important; }
     }
 
     @media (max-height: 550px) {
-      #book-container { height: 60vh; }
+      #book-container { height: 62vh; }
       header.top-bar { height: 35px; }
       section.title-bar { padding: 2px; }
-      .mt-4 { margin-top: 0.5rem; }
     }
-  
+ 
