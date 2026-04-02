@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="index.css">
 
   <title>Cardápio Bar - AFPESP Peruíbe II</title>
@@ -31,7 +31,7 @@
 
   <div id="root">
     <!-- Adicionado onclick para virar as páginas clicando no livro -->
-    <div id="book-container" onclick="handleBookClick(event)">
+   <div id="book-container">
       <div id="book" class="book-wrapper"></div>
     </div>
 
@@ -136,14 +136,14 @@
         type: 'content', 
         sections: [
           { title: 'Porções', icon: 'food', items: [ 
-            { n: 'Batata Frita 200g/400g', p: '15,00 / 20,00' }, 
-            { n: 'Camarão 250g/500g', p: '40,00 / 55,00' }, 
+            { n: 'Batata Frita 400g', p: '20,00' }, 
+            { n: 'Camarão 250g', p: '40,00' }, 
             { n: 'Isca de Peixe 500g', p: '45,00' }, 
             { n: 'Calabresa Acebolada 400g', p: '18,00' } 
           ] },
           { title: 'Pratos Extras', icon: 'food', items: [ 
-            { n: 'Omelete (Simples/Queijo)', p: '4,00 / 5,00' }, 
-            { n: 'Ovo (Cozido/Frito)', p: '2,00 / 3,00' }, 
+            { n: 'Omelete (Simples)', p: '4,00' }, 
+            { n: 'Ovo (Cozido)', p: '2,00' }, 
             { n: 'Filé de Frango', p: '5,00' }, 
             { n: 'Bife Grelhado', p: '9,00' } 
           ] }
@@ -151,13 +151,23 @@
       },
       { type: 'back', title: 'VOLTE SEMPRE', subtitle: 'Bar AFPESP Peruíbe II' }
     ];
+    let book;
+let container;
+let indicator;
+   let startX = 0;
+let startY = 0;
+let isScrolling = false;
 
-    let currentSheet = 0;
-    let isAnimating = false;
-    const book = document.getElementById('book');
-    const container = document.getElementById('book-container');
-    const indicator = document.getElementById('page-indicator');
+let currentSheet = 0;
+let isAnimating = false;
+
+  
+  
     const sheets = [];
+
+    
+
+
 
     function initBook() {
       book.innerHTML = '';
@@ -228,19 +238,20 @@
     }
 
     // Função para tratar o clique direto no livro
-    function handleBookClick(e) {
-      if (isAnimating) return;
-      
-      const rect = container.getBoundingClientRect();
-      const clickX = e.clientX - rect.left;
-      
-      // Se clicar na metade esquerda, volta. Se clicar na direita, avança.
-      if (clickX < rect.width / 2) {
-        prevPage();
-      } else {
-        nextPage();
-      }
-    }
+   function handleBookClick(e) {
+  if (isAnimating || isScrolling) return;
+
+  const rect = container.getBoundingClientRect();
+  const clickX = e.clientX - rect.left;
+
+  if (clickX < rect.width / 2) {
+    prevPage();
+  } else {
+    nextPage();
+  }
+}
+
+ 
 
     function nextPage() {
       if (currentSheet < sheets.length && !isAnimating) {
@@ -275,7 +286,37 @@
       indicator.innerText = `${currentSheet + 1} / ${sheets.length}`;
     }
 
-    window.onload = initBook;
+document.addEventListener("DOMContentLoaded", () => {
+ book = document.getElementById('book');
+container = document.getElementById('book-container');
+indicator = document.getElementById('page-indicator');
+
+  container.addEventListener("click", handleBookClick);
+
+  container.addEventListener("touchstart", (e) => {
+    const touch = e.touches[0];
+    startX = touch.clientX;
+    startY = touch.clientY;
+    isScrolling = false;
+  });
+
+  container.addEventListener("touchmove", (e) => {
+    const touch = e.touches[0];
+    const diffX = Math.abs(touch.clientX - startX);
+    const diffY = Math.abs(touch.clientY - startY);
+
+    if (diffY > diffX) {
+      isScrolling = true;
+    }
+  });
+  container.addEventListener("touchend", () => {
+  setTimeout(() => {
+    isScrolling = false;
+  }, 50);
+});
+
+  initBook();
+});
   </script>
 </body>
 </html>
