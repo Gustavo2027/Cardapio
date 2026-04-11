@@ -301,23 +301,25 @@ indicator = document.getElementById('page-indicator');
     startX = touch.clientX;
     startY = touch.clientY;
     isScrolling = false;
-  });
+  }, { passive: true });
 
   container.addEventListener("touchmove", (e) => {
+    if (isAnimating) return;
+    
     const touch = e.touches[0];
     const diffX = Math.abs(touch.clientX - startX);
     const diffY = Math.abs(touch.clientY - startY);
 
-  if (diffY > diffX) {
-  isScrolling = true;
-  return;
-}
-  });
+    // Se movimento vertical for maior, é scroll - deixa passar
+    if (diffY > diffX) {
+      isScrolling = true;
+      return;
+    }
+  }, { passive: true });
+
   container.addEventListener("touchend", () => {
-  setTimeout(() => {
     isScrolling = false;
-  }, 50);
-});
+  }, { passive: true });
 
   initBook();
 });
