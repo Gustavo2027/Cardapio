@@ -75,7 +75,7 @@
             { n: 'Limão', p: '10,00' },
                { n: 'Abacaxi_c/hortela', p: '10,00' },
             { n: 'Abacaxi', p: '10,00' }
-          ] },
+          ] }
 
              { title: 'Sucos (Jarras)', icon: 'glass', items: [ 
             
@@ -84,7 +84,7 @@
          { n: 'Limão', p: '18,00' },
        { n: 'Abacaxi_c/hortela', p: '18,00' },
             { n: 'Abacaxi', p: '18,00' }
-          ] },
+          ] }
             
           { title: 'Sucos (Del_Valle)', icon: 'glass', items: [ 
             
