@@ -54,12 +54,7 @@
             
             { n: 'H2O_Limão', p: '7,00' },
                   { n: 'Coquetel(frutas)', p: '12,00' },
-            { n: 'Pacote_Gelo(3kg)', p: '6,00' },
-            { n: 'Pacote de Gelo 3kg', p: '6,00' },
-            { n: 'Pacote de Gelo 3kg', p: '6,00' },
-            { n: 'Pacote de Gelo 3kg', p: '6,00' },
-            { n: 'Pacote de Gelo 3kg', p: '6,00' },
-            { n: 'Pacote de Gelo 3kg', p: '6,00' },
+        
             { n: 'Pacote de Gelo 3kg', p: '6,00' }
          
           ] }
