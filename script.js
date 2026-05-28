@@ -86,37 +86,74 @@
           ] }
         ]
       },
-           { type: 'image', url: 'https://i.ibb.co/99h3wM28/porcao-de-camarao-frito.jpg', caption: 'Petiscos e Pratos' },
-      { 
-        type: 'content', 
-        sections: [
-          { title: 'Porções', icon: 'food', items: [ 
-            { n: 'Batata_Frita(400g)', p: '20,00' },
-              { n: 'Batata_Frita(200g)', p: '15,00' },
-            { n: 'Camarão(500g)', p: '55,00' }, 
-            { n: 'Camarão(250g)', p: '40,00' }, 
-            { n: 'Isca_Peixe(500g)', p: '45,00' }, 
-            { n: 'Calabresa_Acebolada_400g', p: '18,00' },
-            { n: 'Misto_Quente', p: '13,00' }
-          ] },
-          { type: 'image', url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1000', caption: 'Especiais e Lanches' },
-      { 
-        type: 'content', 
-        sections: [
-          { title: 'Especiais', icon: 'coffee', items: [ { n: 'Copo_de_Leite', p: '5,00' }, { n: 'Café_Expresso Pequeno', p: '5,00' } ] },
-          ]
-      },
-            { title: 'Pratos Extras', icon: 'food', items: [ 
-            { n: 'Omelete_Simples', p: '4,00' },
-              { n: 'Omelete_c/Queijo', p: '5,00' },
-            { n: 'Ovo_Mexido', p: '3,00' },
-               { n: 'Ovo_Frito', p: '3,00' },
-               { n: 'Ovo_Cozido', p: '2,00' }, 
-            { n: 'Bife_Grelhado', p: '9,00' } ,
-                { n: 'Filé_Frango', p: '8,00' }
-            ] }
-        ]
-      },
+      //      { type: 'image', url: 'https://i.ibb.co/99h3wM28/porcao-de-camarao-frito.jpg', caption: 'Petiscos e Pratos' },
+      // { 
+      //   type: 'content', 
+      //   sections: [
+      //     { title: 'Porções', icon: 'food', items: [ 
+      //       { n: 'Batata_Frita(400g)', p: '20,00' },
+      //         { n: 'Batata_Frita(200g)', p: '15,00' },
+      //       { n: 'Camarão(500g)', p: '55,00' }, 
+      //       { n: 'Camarão(250g)', p: '40,00' }, 
+      //       { n: 'Isca_Peixe(500g)', p: '45,00' }, 
+      //       { n: 'Calabresa_Acebolada_400g', p: '18,00' },
+      //       { n: 'Misto_Quente', p: '13,00' }
+      //     ] },
+            
+      //     { type: 'image', url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1000', caption: 'Especiais e Lanches' },
+      // { 
+      //   type: 'content', 
+      //   sections: [
+      //     { title: 'Especiais', icon: 'coffee', items: [ { n: 'Copo_de_Leite', p: '5,00' }, { n: 'Café_Expresso Pequeno', p: '5,00' } ] },
+      //     ]
+      // },
+      //       { title: 'Pratos Extras', icon: 'food', items: [ 
+      //       { n: 'Omelete_Simples', p: '4,00' },
+      //         { n: 'Omelete_c/Queijo', p: '5,00' },
+      //       { n: 'Ovo_Mexido', p: '3,00' },
+      //          { n: 'Ovo_Frito', p: '3,00' },
+      //          { n: 'Ovo_Cozido', p: '2,00' }, 
+      //       { n: 'Bife_Grelhado', p: '9,00' } ,
+      //           { n: 'Filé_Frango', p: '8,00' }
+      //       ] }
+      //   ]
+      // },
+
+
+        { type: 'image', url: 'https://i.ibb.co/99h3wM28/porcao-de-camarao-frito.jpg', caption: 'Petiscos e Pratos' },
+{ 
+  type: 'content', 
+  sections: [
+    { title: 'Porções', icon: 'food', items: [ 
+      { n: 'Batata_Frita(400g)', p: '20,00' },
+      { n: 'Batata_Frita(200g)', p: '15,00' },
+      { n: 'Camarão(500g)', p: '55,00' }, 
+      { n: 'Camarão(250g)', p: '40,00' }, 
+      { n: 'Isca_Peixe(500g)', p: '45,00' }, 
+      { n: 'Calabresa_Acebolada_400g', p: '18,00' },
+      { n: 'Misto_Quente', p: '13,00' }
+    ]},
+    { title: 'Pratos Extras', icon: 'food', items: [ 
+      { n: 'Omelete_Simples', p: '4,00' },
+      { n: 'Omelete_c/Queijo', p: '5,00' },
+      { n: 'Ovo_Mexido', p: '3,00' },
+      { n: 'Ovo_Frito', p: '3,00' },
+      { n: 'Ovo_Cozido', p: '2,00' }, 
+      { n: 'Bife_Grelhado', p: '9,00' },
+      { n: 'Filé_Frango', p: '8,00' }
+    ]}
+  ]
+},
+{ type: 'image', url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1000', caption: 'Especiais e Lanches' },
+{ 
+  type: 'content', 
+  sections: [
+    { title: 'Especiais', icon: 'coffee', items: [ 
+      { n: 'Copo_de_Leite', p: '5,00' }, 
+      { n: 'Café_Expresso Pequeno', p: '5,00' } 
+    ]}
+  ]
+},
       { type: 'back', title: 'VOLTE SEMPRE', subtitle: 'Bar AFPESP Peruíbe II' }
     ];
     let book;
