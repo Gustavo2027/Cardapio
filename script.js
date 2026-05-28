@@ -96,8 +96,8 @@
             { n: 'Camarão(500g)', p: '55,00' }, 
             { n: 'Camarão(250g)', p: '40,00' }, 
             { n: 'Isca_Peixe(500g)', p: '45,00' }, 
-            { n: 'Calabresa Acebolada_400g', p: '18,00' } 
-            { n: 'Misto_Quente', p: '13,00' }, 
+            { n: 'Calabresa_Acebolada_400g', p: '18,00' },
+            { n: 'Misto_Quente', p: '13,00' }
           ] },
           { type: 'image', url: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1000', caption: 'Especiais e Lanches' },
       { 
@@ -112,8 +112,8 @@
             { n: 'Ovo_Mexido', p: '3,00' },
                { n: 'Ovo_Frito', p: '3,00' },
                { n: 'Ovo_Cozido', p: '2,00' }, 
-            { n: 'Bife_Grelhado', p: '9,00' } 
-                { n: 'Filé_Frango', p: '8,00' }, 
+            { n: 'Bife_Grelhado', p: '9,00' } ,
+                { n: 'Filé_Frango', p: '8,00' }
             ] }
         ]
       },
