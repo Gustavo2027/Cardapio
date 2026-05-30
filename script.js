@@ -145,9 +145,7 @@
       { n: 'Filé_Frango', p: '8,00' }
     ]},
 
-       { title: 'Opcionais exclusivos durante as refeições', icon: '', items: [ 
-         { n: '', p: '' }
-    ]}
+  { title: 'Opcionais exclusivos durante as refeições', icon: '', items: [] }
 
       
   ]
