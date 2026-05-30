@@ -129,8 +129,8 @@
     { title: 'Porções', icon: 'food', items: [ 
       { n: 'Batata_Frita(400g)', p: '20,00' },
       { n: 'Batata_Frita(200g)', p: '15,00' },
-      { n: 'Camarão(500g)', p: '55,00' }, 
-      { n: 'Camarão(250g)', p: '40,00' }, 
+      { n: 'Camarão_Frito(500g)', p: '55,00' }, 
+      { n: 'Camarão_Frito(250g)', p: '40,00' }, 
       { n: 'Isca_Peixe(500g)', p: '45,00' }, 
       { n: 'Calabresa_(400g)', p: '18,00' },
       { n: 'Misto_Quente', p: '13,00' }
