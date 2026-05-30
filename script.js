@@ -78,7 +78,7 @@
            { n: 'Melancia', p: '18,00' },
            { n: 'Limão', p: '18,00' },
            { n: 'Abacaxi_c/hortelã', p: '18,00' },
-            { n: 'Abacaxi', p: '18,00' }
+           { n: 'Abacaxi', p: '18,00' }
           ] },
             
           { title: 'Sucos (Del_Valle)', icon: 'glass', items: [ 
@@ -145,9 +145,9 @@
       { n: 'Filé_Frango', p: '8,00' }
     ]}
 
-    //    { title: 'Opcionais exclusivos durante as refeições', icon: 'food', items: [ 
+       { title: 'Opcionais exclusivos durante as refeições', icon: 'food', items: [ 
   
-    // ]}
+    ]}
 
       
   ]
