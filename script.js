@@ -143,7 +143,7 @@
       { n: 'Ovo_Cozido', p: '2,00' }, 
       { n: 'Bife_Grelhado', p: '9,00' },
       { n: 'Filé_Frango', p: '8,00' }
-    ]}
+    ]},
 
        { title: 'Opcionais exclusivos durante as refeições', icon: 'food', items: [ 
   
