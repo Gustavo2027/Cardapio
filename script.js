@@ -132,7 +132,7 @@
       { n: 'Camarão(500g)', p: '55,00' }, 
       { n: 'Camarão(250g)', p: '40,00' }, 
       { n: 'Isca_Peixe(500g)', p: '45,00' }, 
-      { n: 'Calabresa_(400g)', p: '18,00' },
+      { n: 'Calabresa(400g)', p: '18,00' },
       { n: 'Misto_Quente', p: '13,00' }
     ]},
     { title: 'Pratos Opcionais', icon: 'food', items: [ 
