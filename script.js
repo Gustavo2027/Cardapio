@@ -20,7 +20,8 @@
         sections: [
           { title: 'Doses', icon: 'glass', items: [ { n: 'Pinga_51', p: '4,00' }, { n: 'Velho_Barreiro', p: '4,00' }, { n: 'Sagatiba', p: '5,00' }, { n: 'Saquê', p: '6,00' }, { n: 'Vodka', p: '5,00' }, { n: 'Campari', p: '7,00' } ] },
             {   title: 'Batida', icon: 'glass', items: [ { n: 'Pinga_51', p: '20,00' }, { n: 'Velho_Barreiro', p: '20,00' }, { n: 'Sagatiba', p: '25,00' }, { n: 'Saquê', p: '20,00' }, { n: 'Vodka', p: '25,00' }, { n: 'Espanhola', p: '18,00' } ] },
-          { title: 'Caipirinhas', icon: 'glass', items: [ { n: 'Pinga 51', p: '15,00' }, { n: 'Velho_Barreiro', p: '15,00' }, { n: 'Sagatiba', p: '25,00' }, { n: 'Saquê', p: '18,00' }, { n: 'Caipiroska', p: '25,00' } ] }
+          { title: 'Caipirinhas', icon: 'glass', items: [ { n: 'Pinga 51', p: '15,00' }, { n: 'Velho_Barreiro', p: '15,00' }, { n: 'Sagatiba', p: '25,00' }, { n: 'Saquê', p: '18,00' }, { n: 'Caipiroska', p: '25,00' } ] },
+             { title: 'Consultar opções do dia', icon: '', items: [] }
         ]
       },
       { type: 'image', url: 'https://images.unsplash.com/photo-1535958636474-b021ee887b13?q=80&w=1000', caption: 'Cervejas e Chopp' },
@@ -126,7 +127,7 @@
 { 
   type: 'content', 
   sections: [
-    { title: 'Porções', icon: 'food', items: [ 
+    { title: 'Porções e Lanches', icon: 'food', items: [ 
       { n: 'Batata_Frita(400g)', p: '20,00' },
       { n: 'Batata_Frita(200g)', p: '15,00' },
       { n: 'Camarão(500g)', p: '55,00' }, 
